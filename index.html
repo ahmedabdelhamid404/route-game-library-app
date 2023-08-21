@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Library App</title>
+    <!-- FavIcon -->
+    <link
+      rel="shortcut icon"
+      href="images/game favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Spinner Style -->
+    <link rel="stylesheet" href="css/spinner.css" />
+    <!-- Mystyle -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="overflow-hidden">
+    <!-- Spinner Section -->
+    <div id="spinner" class="spinner-container d-flex">
+      <div class="spinner-content w-25">
+        <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
+        <div
+          class="mx-auto w-25 animate__hinge text-center"
+          id="analog-spinner"
+        >
+          <img src="images/Spinner-Analog.png" alt="analog spinner" />
+        </div>
+      </div>
+    </div>
+    <!-- Home Section -->
+    <section id="main-section" class="d-block">
+      <header>
+        <img src="images/wraper.png" alt="background-image" />
+      </header>
+      <nav
+        class="top-0 mx-auto w-75 shadow-lg rounded rounded-4 navbar navbar-expand-lg px-1 py-2 position-sticky z-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><div class="logo">
+              <img class="me-2" src="images/logo-sm.png" alt="logo-image" />
+              <h1>GAME REVIEWS</h1>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link active"
+                  data-bs-catg="mmorpg"
+                  aria-current="page"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link"
+                  data-bs-catg="shooter"
+                  aria-current="page"
+                  >SHOOTER</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link"
+                  data-bs-catg="horror"
+                  aria-current="page"
+                  >HORROR</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link"
+                  data-bs-catg="permadeath"
+                  aria-current="page"
+                  >PERMADEATH</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link"
+                  data-bs-catg="superhero"
+                  aria-current="page"
+                  >SUPERHERO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link"
+                  data-bs-catg="low-spec"
+                  aria-current="page"
+                  >LOW-SPEC</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="container py-5">
+          <div class="row g-4" id="dataContainer"></div>
+        </div>
+      </section>
+    </section>
+    <!-- Start Details Section -->
+    <section id="detailas-section" class="details-section d-none">
+      <div class="container text-white py-5">
+        <div class="header mb-4">
+          <h2>Details Game</h2>
+          <i id="closeBtn" class="fa-solid fa-x"></i>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <img id="imageThubnail" src="" alt="game-thumb" />
+          </div>
+          <div class="col-md-8">
+            <h4 class="fw-bolder fs-3" id="gameName"></h4>
+            <p id="categ"></p>
+            <p id="platform"></p>
+            <p id="Status"></p>
+            <p class="fs-7" id="gameDescription"></p>
+            <a
+              id="gameLink"
+              target="_blank"
+              href=""
+              class="btn btn-outline-warning text-white"
+            >
+              Show Game
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

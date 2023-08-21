@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  font-family: "Comfortaa", cursive;
+  background-color: #272b30;
+}
+
+h1 {
+  font-family: "Nerko One", cursive;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit !important;
+}
+
+/* Utilities */
+.desc-text {
+  color: #696c6f !important;
+}
+.btn-style {
+  font-size: 0.75rem;
+  font-weight: bolder;
+}
+.fs-7 {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+/* Start Main Section */
+/* Spinner Section */
+.spinner-container {
+  background-color: #272b30;
+  position: fixed;
+  z-index: 99999;
+}
+
+.fadeOut {
+  animation: fadeOut 0.4s ease-in-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* header Section */
+#main-section header {
+  height: 30vh;
+}
+
+#main-section header img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+}
+
+/* NavBar Section */
+nav {
+  background-color: #3a497b;
+  font-size: 0.75rem;
+  color: white;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+nav .logo h1 {
+  font-size: 1.5625rem;
+  margin-bottom: 0px;
+  font-weight: lighter;
+}
+
+nav img {
+  width: 15%;
+}
+
+.nav-link:hover {
+  color: #09c !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link.active {
+  color: #09c !important;
+}
+
+/* Main Section */
+.badge {
+  background-color: #32383e;
+  padding: 0.3125rem;
+  border-radius: 0.5rem;
+}
+
+.card {
+  cursor: pointer;
+  transition: scale 0.4s ease-in-out, filter 0.4s ease-in-out;
+  filter: grayscale(0.7);
+}
+
+.card:hover {
+  scale: 1.05;
+  filter: none;
+}
+
+/* Start Details Section */
+.details-section .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-section .header i {
+  cursor: pointer;
+  color: #939395;
+  transition: color 0.2s ease-in-out;
+  font-size: 1.25rem;
+}
+.details-section .header i:hover {
+  color: #cbcaca;
+}
+
+.details-section .details-badge {
+  padding: 0.3125rem 0.625rem;
+  background-color: #09c;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #000;
+}
