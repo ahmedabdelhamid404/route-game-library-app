@@ -52,10 +52,10 @@ export class Ui {
     ).innerHTML = `Category: <span class="details-badge">${genre}</span>`;
     document.getElementById(
       "platform"
-    ).innerHTML = `Category: <span class="details-badge">${platform}</span>`;
+    ).innerHTML = `Platform: <span class="details-badge">${platform}</span>`;
     document.getElementById(
       "Status"
-    ).innerHTML = `Category: <span class="details-badge">${status}</span>`;
+    ).innerHTML = `Status: <span class="details-badge">${status}</span>`;
     document.getElementById("gameDescription").innerHTML = description;
     document.getElementById("gameLink").setAttribute("href", game_url);
     this.showMain();
