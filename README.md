@@ -4,7 +4,7 @@
 
 Welcome to the Free-to-Play Game Library App! This repository contains the source code and documentation for our latest creation, a dynamic and immersive gaming application designed to bring the world of gaming right to your fingertips. Whether you're a seasoned gamer or just starting your gaming journey, our app promises a world of entertainment, excitement, and discovery.
 
-**Live Link:** [Free To Play]https://ahmedmohamedabdelhamed.github.io/route-game-library-app/
+**Live Link:** [Free To Play](https://ahmedmohamedabdelhamed.github.io/route-game-library-app/)
 
 ## Key Features
 
